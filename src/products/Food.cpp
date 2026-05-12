@@ -3,7 +3,7 @@
 
 
 Food::Food(std::string name, double base_price, double weight) : 
-    Product(name, "Food", base_price, 6.0), 
+    Product(name, "Food", base_price, 0.06, weight), 
     weight_(weight) 
     {}
 

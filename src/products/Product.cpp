@@ -1,14 +1,14 @@
 #include "../../include/products/Product.hpp"
 
 
-Product::Product(std::string name, std::string type, double base_price, double vat_percentage) : 
+Product::Product(std::string name, std::string type, double base_price, double vat_percentage, double quantity) : 
     name_(name), 
     type_(type), 
     base_price_(base_price), 
-    vat_percentage_(vat_percentage) 
+    vat_percentage_(vat_percentage),
+    quantity_(quantity)
     {}
 
-Product::~Product() {}
 
 std::string const& Product::name() const {
     return name_;
@@ -25,4 +25,8 @@ double Product::base_price() const {
 
 double Product::vat_percentage() const {
     return vat_percentage_;
+}
+
+double Product::quantity() const {
+    return quantity_;
 }

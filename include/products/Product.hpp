@@ -11,14 +11,16 @@ class Product
         [[nodiscard]] double base_price() const;
         [[nodiscard]] double vat_percentage() const;
 
-        [[nodiscard]] virtual double price() const;
+        [[nodiscard]] double price() const;
+        double quantity() const;
     protected:
 
-        Product(std::string name, std::string type, double base_price, double vat_percentage );
+        Product(std::string name, std::string type, double base_price, double vat_percentage, double quantity );
 
         std::string name_;
         std::string type_;
         double base_price_;
         double vat_percentage_;
+        double quantity_;
         
 };
