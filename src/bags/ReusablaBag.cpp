@@ -1,3 +1,3 @@
 #include "../../include/bags/ReusableBag.hpp"
 
-ReusableBag::ReusableBag(double price) : Bag("Reusable bag", 25, price) {};
+ReusableBag::ReusableBag(double price) : Bag("Reusable", 25, price) {};
