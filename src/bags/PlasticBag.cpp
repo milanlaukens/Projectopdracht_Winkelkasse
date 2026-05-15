@@ -1,3 +1,3 @@
 #include "../../include/bags/PlasticBag.hpp"
 
-PlasticBag::PlasticBag() : Bag("Plastic bag", 10, 2) {};
+PlasticBag::PlasticBag(double price) : Bag("Plastic bag", 10, price) {};

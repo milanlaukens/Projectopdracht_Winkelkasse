@@ -10,5 +10,5 @@
  */
 class BioBag : public Bag {
     public:
-        explicit BioBag();
+        explicit BioBag(double price);
 };

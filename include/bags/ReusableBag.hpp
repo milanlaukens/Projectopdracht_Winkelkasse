@@ -9,5 +9,5 @@
  */
 class ReusableBag : public Bag {
     public:
-        ReusableBag();
+        ReusableBag(double price);
 };

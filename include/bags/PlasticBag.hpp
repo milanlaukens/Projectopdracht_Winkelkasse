@@ -10,5 +10,5 @@
  */
 class PlasticBag : public Bag {
     public:
-        PlasticBag();
+        PlasticBag(double price);
 };
