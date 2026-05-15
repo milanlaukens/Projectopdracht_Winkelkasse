@@ -1,4 +1,4 @@
 #include "../../include/products/Soap.hpp"
 
-Soap::Soap(double price, int units) : NonFood("Soap", price, units), price_(price) {};
+Soap::Soap(int units, double price) : NonFood("Soap", units, price), price_(price) {};
 

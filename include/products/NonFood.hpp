@@ -10,7 +10,7 @@ class NonFood : public Product
         [[nodiscard]] double price() const;
 
     protected:
-        NonFood(std::string name, double base_price, int units);
+        NonFood(std::string name, int units, double base_price);
 
     private:
         int units_;

@@ -1,1 +1,3 @@
-g++ -std=c++20 -Wall -Wextra -pedantic src/*.cpp -Iinclude -o app
+g++ -std=c++20 -Wall -Wextra -pedantic src/products/*.cpp tests/test_products.cpp -Iinclude -o build/product_test
+
+g++ -std=c++20 -Wall -Wextra -pedantic src/products/*.cpp src/bags/*.cpp tests/test_bags.cpp -Iinclude -o build/bags_test

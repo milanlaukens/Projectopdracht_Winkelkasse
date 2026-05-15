@@ -5,7 +5,7 @@
 class Soap : public NonFood
 {
     public:
-        explicit Soap(double price, int units);
+        explicit Soap(int units, double price);
     
     private:
         double price_;

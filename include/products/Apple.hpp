@@ -1,7 +1,12 @@
 #pragma once
 #include "Food.hpp"
 
-
+/**
+ * create apple
+ *
+ * @param weight double.
+ * @param price_per_kg double.
+ */
 class Apple : public Food
 {
     public:

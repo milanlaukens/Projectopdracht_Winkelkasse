@@ -1,3 +1,3 @@
 #include "../../include/products/Sponge.hpp"
 
-Sponge::Sponge(double price, int units) : NonFood("Sponge", price, units), price_(price) {};
+Sponge::Sponge(int units, double price) : NonFood("Sponge", price, units), price_(price) {};

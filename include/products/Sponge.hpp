@@ -4,7 +4,7 @@
 class Sponge : public NonFood
 {
     public:
-        explicit Sponge(double price, int units);
+        explicit Sponge(int units,double price);
     
     private:
         double price_;

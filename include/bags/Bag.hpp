@@ -9,16 +9,20 @@
 
 
 
+
 class Bag
 {
     public:
         virtual ~Bag() = default;
 
-        [[nodiscard]] virtual std::string const& type() const = 0;
-        virtual void add_item(std::unique_ptr<Product> item) = 0;
+        [[nodiscard]]  std::string const& type() const;
+         void add_item(std::unique_ptr<Product> item);
         // int -> double ?? an item like cheece could be 0.5kg or volume
-        [[nodiscard]] virtual std::unordered_map<std::string, double> contents() const = 0;
+        [[nodiscard]]  std::unordered_map<std::string, double> contents() const;
         double price() const;
+
+        void show_contents() const;
+        std::string show_used_capacity() const;
 
 
     protected:
@@ -27,7 +31,7 @@ class Bag
 
         std::string type_;
         double capacity_;
-        double contnent_volume_ = 0;
+        double used_capacity;
         std::vector<std::unique_ptr<Product>> items_;
         double price_;
 };
